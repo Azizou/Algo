@@ -18,6 +18,7 @@ class RemoveDupInString{
                 tail++;
             }
         }
+        if(tail<len)
         chars[tail]= 0;//mark the end of non dupplicates
     }
 
@@ -25,6 +26,14 @@ class RemoveDupInString{
     public static void main(String [] args){
         System.out.println("In main...");
         char [] chars = "abcdefjhk".toCharArray();
+        removeDup(chars);
+        System.out.println(new String(chars));
+        chars = "abcdaefjhk".toCharArray();
+        removeDup(chars);
+        System.out.println(new String(chars));
+        chars = "aaaaaabcdbbbbbbefjhsssk".toCharArray();
+        removeDup(chars);
+        System.out.println(new String(chars));
 
     }
 }
