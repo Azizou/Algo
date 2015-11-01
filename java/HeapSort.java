@@ -1,4 +1,7 @@
-
+/**
+ * Azizou Ogbone
+ * Simpe implementation of a heapSort
+ */
 class HeapSort{
     public static void BuildMaxHeap(int unordered[]){
         /*
